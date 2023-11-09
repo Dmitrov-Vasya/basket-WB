@@ -1,0 +1,113 @@
+.recipient {
+  max-width: 848px;
+  height: 176px;
+  display: flex;
+  padding: 16px 24px 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+}
+.recipient__wrapper-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.recipient__title {
+  margin: 0;
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.24px;
+}
+.recipient__container-form {
+  display: flex;
+  width: 590px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.recipient__wrapper-initials {
+  display: flex;
+  align-items: flex-start;
+  gap: 77px;
+  align-self: stretch;
+}
+.recipient__wrapper-initial {
+  width: 283px;
+  height: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1 0 0;
+}
+.recipient__span-initial {
+  color: var(--system-gray, #9797af);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+.recipient__input-initial {
+  display: block;
+  max-width: 283px;
+  height: 24px;
+  color: var(--system-gray, #9797af);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+}
+.recipient__span-error {
+  color: var(--system-orange, #f55123);
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+}
+.recipient__wrapper-info {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 41px;
+  justify-content: flex-start;
+}
+.recipient__input-initial-info {
+  display: block;
+  max-width: 180px;
+  height: 24px;
+  color: var(--system-gray, #9797af);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+@media screen and (max-width: 1024px) {
+  .recipient {
+    padding-top: 21px;
+  }
+  .recipient__wrapper-initials {
+    gap: 19px;
+  }
+  .recipient__wrapper-info {
+    gap: 22px;
+  }
+}

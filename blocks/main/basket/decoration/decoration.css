@@ -1,0 +1,7 @@
+.decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}

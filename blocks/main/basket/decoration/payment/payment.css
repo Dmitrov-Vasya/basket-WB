@@ -1,0 +1,101 @@
+.payment {
+  display: flex;
+  padding: 18px 24px 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 843px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+}
+.payment__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+.payment__header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.payment__title {
+  flex: 1 0 0;
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.24px;
+  margin: 0;
+}
+.payment__button {
+  padding: 0;
+  padding-top: 5px;
+  color: var(--system-magenta, #cb11ab);
+  text-align: right;
+  border: none;
+  border-radius: 0;
+  background: var(--background-white, #fff);
+  border: none;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.payment__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 13px;
+  align-self: stretch;
+}
+.payment__icon {
+  margin-top: 8px;
+  margin-right: -2px;
+  width: 30px;
+  align-items: center;
+  height: 9.333px;
+  flex-shrink: 0;
+}
+.payment__number-card {
+  width: 139px;
+  margin: 0;
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.payment__number-date {
+  margin: 0;
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.payment__wrapper-add {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+.payment__add {
+  margin: 0;
+  color: var(--system-gray, #9797af);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
