@@ -1,0 +1,156 @@
+/* hint с информацией о компании */
+.available__tooltip-container {
+  position: relative;
+}
+.available__tooltip-info-market {
+  display: none;
+}
+.available__tooltip-info-market.show {
+  position: absolute;
+  top: 8px;
+  left: -150px;
+  display: flex;
+  width: 248px;
+  height: 80px;
+  padding: 11px 16px 13px 16px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fff;
+}
+.available__tooltip-info-market-title {
+  color: var(--light-system-text, #000);
+  margin: 0;
+  align-self: stretch;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 123.077% */
+  text-align: start;
+}
+.available__tooltip-info-market-text {
+  color: var(--light-system-text, #000);
+  align-self: stretch;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+/*      hint с информацией о доставке                                   */
+
+.delivery__tooltip-container {
+  position: relative;
+}
+.delivery__tooltip-info {
+  display: none;
+}
+.delivery__tooltip-info.show {
+  position: absolute;
+  top: 5px;
+  left: -180px;
+  display: flex;
+  width: 288px;
+  padding: 10px 16px 14px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--background-white, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.delivery__tooltip-info-text {
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+/*      hint с информацией о доставке              */
+
+.total__tooltip-container {
+  position: relative;
+}
+.total__tooltip-info {
+  display: none;
+}
+.total__tooltip-info.show {
+  display: flex;
+  width: 288px;
+  top: 25px;
+  left: -420px;
+  position: absolute;
+  padding: 10px 16px 14px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--background-white, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.total__tooltip-info-text {
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/*  hint с информацией о скидке                     */
+
+.available__tooltip-container-info {
+  position: relative;
+}
+.available__tooltip-info-discount {
+  display: none;
+}
+.available__tooltip-info-discount.show {
+  display: flex;
+  width: 207px;
+  height: 40px;
+  padding: 11px 16px 13px 16px;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  right: -65px;
+  top: 0;
+
+  border-radius: 8px;
+  background: var(--light-background-nav-bar, #fff);
+
+  /* Тени/Итого, Выпадающие списки */
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.available__info-discount-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--light-system-gray, #a0a0a4);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+.available__info-discount-values {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--light-system-text, #000);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
