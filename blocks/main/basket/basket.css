@@ -1,9 +1,9 @@
 .basket {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   position: relative;
-  width: 891px;
+  /* width: 891px; */
   gap: 27px;
   flex: 1 0 0;
 }
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 1024px) {
   .basket {
-    width: 640px;
+    /* width: 640px; */
   }
 }
 @media screen and (max-width: 700px) {
@@ -41,6 +41,9 @@
 @media screen and (max-width: 320px) {
   .basket {
     width: 288px;
+  }
+  .basket__tittle {
+    margin-top: -5px;
   }
 }
 /* @media screen and (max-width: 1000px) {

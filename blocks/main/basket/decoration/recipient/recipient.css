@@ -1,6 +1,5 @@
 .recipient {
-  max-width: 848px;
-  height: 176px;
+  /* max-width: 848px; */
   display: flex;
   padding: 16px 24px 24px 24px;
   flex-direction: column;
@@ -28,7 +27,7 @@
 }
 .recipient__container-form {
   display: flex;
-  width: 590px;
+  /* width: 590px; */
   flex-direction: column;
   align-items: flex-start;
 }
@@ -39,7 +38,6 @@
   align-self: stretch;
 }
 .recipient__wrapper-initial {
-  width: 283px;
   height: 64px;
   flex-direction: column;
   align-items: flex-start;
@@ -109,5 +107,13 @@
   }
   .recipient__wrapper-info {
     gap: 22px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .recipient__wrapper-initials {
+    flex-direction: column;
+  }
+  .recipient__wrapper-info {
+    flex-direction: column;
   }
 }

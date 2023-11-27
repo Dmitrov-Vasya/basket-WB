@@ -3,7 +3,7 @@
   padding: 31px 0px 24px 0px;
   flex-direction: column;
   align-items: center;
-  max-width: 891px;
+  /* max-width: 891px; */
   gap: 20px;
   align-self: stretch;
   border-radius: 16px;
@@ -106,7 +106,6 @@
 }
 .delivery__about-wrapper {
   display: flex;
-  width: 398px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -247,6 +246,11 @@
 
 @media screen and (max-width: 1024px) {
   .delivery {
-    width: 100%;
+    /* width: 100%; */
+  }
+}
+@media screen and (max-width: 700px) {
+  .delivery__wrapper {
+    display: inline;
   }
 }

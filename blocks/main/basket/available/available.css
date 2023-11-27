@@ -128,7 +128,6 @@
   align-self: stretch;
 }
 .available__good-name {
-  width: 275px;
   margin: 0;
   align-self: stretch;
   color: #000;
@@ -417,6 +416,9 @@
   .available__good-size {
     display: none;
   }
+  .available__container-all-mob {
+    width: 192px;
+  }
   .available__good-size-mobile {
     width: 14px;
     height: 19px;
@@ -457,14 +459,99 @@
   .available__container-final-sum {
     display: none;
   }
+  .available__wrapper-description {
+    width: 192px;
+  }
+  .available__good-name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .available__good-color {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .available__place-dispatch {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .available__company-dispatch {
+    display: none;
+  }
+  .available__tooltip-button-market {
+    display: none;
+  }
   .available__container-final-sum_type_mobile {
     display: flex;
-    width: 110px;
+    width: 195px;
     padding-right: 35px;
     flex-direction: row;
     align-items: flex-end;
     gap: 5px;
     flex: 1 0 0;
     align-self: stretch;
+  }
+  .available__container-good {
+    display: block;
+  }
+  .available__container-counter-icons {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 320px) {
+  .available__wrapper-container {
+    width: 80px;
+    height: 32px;
+  }
+  .available__final-sum {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .available__final-currency {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .available__good-name {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .available__container-counter-icons {
+    gap: 16px;
+  }
+  .available__container-calculations {
+    padding: 0;
+  }
+  .available__input-container {
+    width: 28px;
+    height: 32px;
+  }
+  .available__button-container-minus {
+    width: 24px;
+    height: 32px;
+    padding: 0;
+  }
+  .available__button-container-plus {
+    width: 24px;
+    height: 32px;
+    padding: 0;
+  }
+  .available__rest-goods {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .available__wrapper-icon {
+    margin-right: -45px;
   }
 }

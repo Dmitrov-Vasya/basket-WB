@@ -75,7 +75,6 @@
               <label for="all-goods" style="gap: 11px">Выбрать все</label>
             </div>
             <img
-              img
               class="available__icon-header"
               src="./images/icons/Arrow.svg"
               alt="Стрелка"
@@ -93,6 +92,7 @@
                       id="all-good"
                       name="all-good"
                       value="all-good"
+                      data-id="1"
                     />
                     <label for="all-good"></label>
                     <p class="available__good-size-mobile">56</p>
@@ -103,65 +103,71 @@
                     alt="Одежда"
                   />
                 </div>
-                <div class="available__container-final-sum_type_mobile">
-                  <div class="available__wrapper-final">
-                    <p class="available__final-sum" id="available__final-sum">
-                      522
-                    </p>
-                    <p class="available__final-currency">сом</p>
-                  </div>
-                  <div
-                    class="available__wrapper-general"
-                    id="available__wrapper-general1"
-                  >
-                    <p class="available__general-sum">1051 сом</p>
-                    <div class="available__tooltip-container-info">
-                      <div
-                        class="available__tooltip-info-discount"
-                        id="available__tooltip-info-discount1"
-                      >
-                        <span class="available__info-discount-header">
-                          <span>Скидка 55%</span>
-                          <span>Скидка покупателя 10%</span>
-                        </span>
-                        <span class="available__info-discount-values">
-                          <span>−300 сом</span>
-                          <span>−30 сом</span>
-                        </span>
+                <div class="available__container-all-mob">
+                  <div class="available__container-final-sum_type_mobile">
+                    <div class="available__wrapper-final">
+                      <p class="available__final-sum" data-id="1" id="available__final-sum">
+                        522
+                      </p>
+                      <p class="available__final-currency">сом</p>
+                    </div>
+                    <div
+                      class="available__wrapper-general"
+                      id="available__wrapper-general1"
+                    >
+                      <p class="available__general-sum" data-id="1">1051 сом</p>
+                      <div class="available__tooltip-container-info">
+                        <div
+                          class="available__tooltip-info-discount"
+                          id="available__tooltip-info-discount1"
+                        >
+                          <span class="available__info-discount-header">
+                            <span>Скидка 55%</span>
+                            <span>Скидка покупателя 10%</span>
+                          </span>
+                          <span class="available__info-discount-values">
+                            <span>−300 сом</span>
+                            <span>−30 сом</span>
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="available__wrapper-description">
-                  <p class="available__good-name">Футболка UZcotton мужская</p>
-                  <div class="available__container-description">
-                    <p class="available__good-color">Цвет: белый</p>
-                    <p class="available__good-size">Размер: 56</p>
-                  </div>
-                  <div class="available__container-dispatch">
-                    <p class="available__place-dispatch">Коледино WB</p>
-                    <div class="available__container-company">
-                      <p class="available__company-dispatch">OOO Вайлдберриз</p>
-                      <span
-                        id="available__tooltip-button-market-1"
-                        class="available__tooltip-button-market"
-                        >&#9432;</span
-                      >
-                      <div class="available__tooltip-container">
-                        <div
-                          class="available__tooltip-info-market"
-                          id="tooltip-info-market-1"
+                  <div class="available__wrapper-description">
+                    <p class="available__good-name">
+                      Футболка UZcotton мужская
+                    </p>
+                    <div class="available__container-description">
+                      <p class="available__good-color">Цвет: белый</p>
+                      <p class="available__good-size">Размер: 56</p>
+                    </div>
+                    <div class="available__container-dispatch">
+                      <p class="available__place-dispatch">Коледино WB</p>
+                      <div class="available__container-company">
+                        <p class="available__company-dispatch">
+                          OOO Вайлдберриз
+                        </p>
+                        <span
+                          id="available__tooltip-button-market-1"
+                          class="available__tooltip-button-market"
+                          >&#9432;</span
                         >
-                          <h5 class="available__tooltip-info-market-title">
-                            OOO «Вайлдберриз»
-                          </h5>
-                          <span class="available__tooltip-info-market-text"
-                            >ОГРН: 5167746237148</span
+                        <div class="available__tooltip-container">
+                          <div
+                            class="available__tooltip-info-market"
+                            id="tooltip-info-market-1"
                           >
-                          <span class="available__tooltip-info-market-text"
-                            >129337, Москва, улица Красная Сосна, 2, корпус 1,
-                            стр. 1, помещение 2, офис 34</span
-                          >
+                            <h5 class="available__tooltip-info-market-title">
+                              OOO «Вайлдберриз»
+                            </h5>
+                            <span class="available__tooltip-info-market-text"
+                              >ОГРН: 5167746237148</span
+                            >
+                            <span class="available__tooltip-info-market-text"
+                              >129337, Москва, улица Красная Сосна, 2, корпус 1,
+                              стр. 1, помещение 2, офис 34</span
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -175,7 +181,7 @@
                     <input
                       class="available__input-container"
                       value="1"
-                      data-price="522"
+                      data-id="1"
                     />
                     <div class="available__button-container-plus">+</div>
                   </div>
@@ -231,7 +237,7 @@
                 </div>
                 <div class="available__container-final-sum">
                   <div class="available__wrapper-final">
-                    <p class="available__final-sum" id="available__final-sum">
+                    <p class="available__final-sum" data-id="1" id="available__final-sum">
                       522
                     </p>
                     <p class="available__final-currency">сом</p>
@@ -240,7 +246,7 @@
                     class="available__wrapper-general"
                     id="available__wrapper-general1"
                   >
-                    <p class="available__general-sum">1051 сом</p>
+                    <p class="available__general-sum" data-id="1">1051 сом</p>
                     <div class="available__tooltip-container-info">
                       <div
                         class="available__tooltip-info-discount"
@@ -260,6 +266,8 @@
                 </div>
               </div>
             </div>
+
+            </div>
             <div class="available__container-goods">
               <div class="available__container-good">
                 <div class="available__container-good-info">
@@ -272,6 +280,7 @@
                         id="all-good1"
                         name="all-good"
                         value="all-good"
+                        data-id="2"
                       />
                       <label for="all-good1"></label>
                     </div>
@@ -281,114 +290,15 @@
                       alt="Телефон"
                     />
                   </div>
-                  <div class="available__wrapper-description">
-                    <p class="available__good-name">
-                      Силиконовый чехол картхолдер (отверстия) для карт,
-                      прозрачный кейс бампер на Apple iPhone XR, MobiSafe
-                    </p>
-                    <div class="available__container-description">
-                      <p class="available__good-color">Цвет: прозрачный</p>
-                    </div>
-                    <div class="available__container-dispatch">
-                      <p class="available__place-dispatch">Коледино WB</p>
-                      <div class="available__container-company">
-                        <p class="available__company-dispatch">
-                          OOO Мегапрофстиль
-                        </p>
-                        <span
-                          id="available__tooltip-button-market-2"
-                          class="available__tooltip-button-market"
-                          >&#9432;</span
-                        >
-                        <div class="available__tooltip-container">
-                          <div
-                            class="available__tooltip-info-market"
-                            id="tooltip-info-market-2"
-                          >
-                            <h5 class="available__tooltip-info-market-title">
-                              OOO «МЕГАПРОФСТИЛЬ»
-                            </h5>
-                            <span class="available__tooltip-info-market-text"
-                              >ОГРН: 5167746237148</span
-                            >
-                            <span class="available__tooltip-info-market-text"
-                              >129337, Москва, улица Красная Сосна, 2, корпус 1,
-                              стр. 1, помещение 2, офис 34</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="available__container-calculations">
-                  <div class="available__container-counter-icons">
-                    <div class="available__wrapper-container">
-                      <div class="available__button-container-minus">-</div>
-                      <input
-                        class="available__input-container"
-                        value="1"
-                        data-price="10500"
-                      />
-                      <div class="available__button-container-plus">+</div>
-                    </div>
-                    <!-- <p class="available__rest-goods">Осталось 2 шт.</p> -->
-                    <div class="available__wrapper-icon">
-                      <div class="available__wrapper-svg">
-                        <svg
-                          class="available__icon-like"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M3.03399 4.05857C2.26592 4.75224 1.76687 5.83284 1.99496 7.42928C2.22335 9.02783 3.26497 10.6852 4.80439 12.3478C6.25868 13.9184 8.10965 15.4437 9.99999 16.874C11.8903 15.4437 13.7413 13.9184 15.1956 12.3478C16.7351 10.6852 17.7767 9.02783 18.005 7.4293C18.2331 5.83285 17.734 4.75224 16.9659 4.05856C16.1767 3.34572 15.055 3 14 3C12.132 3 11.0924 4.08479 10.5177 4.68443C10.4581 4.7466 10.4035 4.80356 10.3535 4.85355C10.1583 5.04882 9.84169 5.04882 9.64643 4.85355C9.59644 4.80356 9.54185 4.7466 9.48227 4.68443C8.9076 4.08479 7.868 3 5.99999 3C4.94498 3 3.82328 3.34573 3.03399 4.05857ZM2.36374 3.31643C3.37372 2.40427 4.75205 2 5.99999 2C8.07126 2 9.34542 3.11257 9.99999 3.77862C10.6545 3.11257 11.9287 2 14 2C15.2479 2 16.6262 2.40428 17.6362 3.31644C18.6674 4.24776 19.2669 5.66715 18.995 7.5707C18.7233 9.47217 17.515 11.3148 15.9294 13.0272C14.3355 14.7486 12.3064 16.3952 10.3 17.9C10.1222 18.0333 9.87776 18.0333 9.69999 17.9C7.69356 16.3952 5.66446 14.7485 4.07063 13.0272C2.48506 11.3148 1.27668 9.47217 1.00501 7.57072C0.733043 5.66716 1.33253 4.24776 2.36374 3.31643Z"
-                            fill="black"
-                          />
-                        </svg>
-                      </div>
-                      <div class="available__wrapper-svg">
-                        <svg
-                          class="available__icon-delete"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"
-                            fill="black"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"
-                            fill="black"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"
-                            fill="black"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="available__container-final-sum">
+                  <div class="available__container-all-mob">
+                    <div class="available__container-final-sum_type_mobile">
                     <div class="available__wrapper-final">
                       <p
                         class="available__final-sum available__final-sum_type_big"
                         id="available__final-sum"
+                        data-id="2"
                       >
-                        10500
+                        3675
                       </p>
                       <p class="available__final-currency">сом</p>
                     </div>
@@ -396,7 +306,7 @@
                       class="available__wrapper-general"
                       id="available__wrapper-general2"
                     >
-                      <p class="available__general-sum">2 300 047 сом</p>
+                      <p class="available__general-sum" data-id="2">10500 сом</p>
                       <div class="available__tooltip-container-info">
                         <div
                           class="available__tooltip-info-discount"
@@ -414,84 +324,59 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="available__container-goods">
-              <div class="available__container-good">
-                <div class="available__container-good-info">
-                  <div class="available__container-checkbox-img">
-                    <div class="available__wrapper-checkbox-good">
-                      <input
-                        class="checkbox available__custom-checkbox"
-                        type="checkbox"
-                        checked="checked"
-                        id="all-good2"
-                        name="all-good"
-                        value="all-good"
-                      />
-                      <label for="all-good2"></label>
-                      <p
-                        class="available__good-size-mobile available__good-size-mobile_type_long"
-                      >
-                        56/54/52...
-                      </p>
-                    </div>
-                    <img
-                      class="available__good-img"
-                      src="./images/pictures/Pencils.jpg"
-                      alt="Карандаши"
-                    />
-                  </div>
-                  <div class="available__wrapper-description">
-                    <p class="available__good-name">
-                      Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
-                      заточенные, шестигранные, Faber-Castell
-                    </p>
-                    <!-- <div class="available__container-description">
-                                    <p class="available__good-color">Цвет: белый</p>
-                                    <p class="available__good-size">Размер: 56</p>
-                                </div> -->
-                    <div class="available__container-dispatch">
-                      <p class="available__place-dispatch">Коледино WB</p>
-                      <div class="available__container-company">
-                        <p class="available__company-dispatch">
-                          OOO Вайлдберриз
+                      <div class="available__wrapper-description">
+                        <p class="available__good-name">
+                          Силиконовый чехол картхолдер (отверстия) для карт,
+                          прозрачный кейс бампер на Apple iPhone XR, MobiSafe
                         </p>
-                        <span
-                          id="available__tooltip-button-market-3"
-                          class="available__tooltip-button-market"
-                          >&#9432;</span
-                        >
-                        <div class="available__tooltip-container">
-                          <div
-                            class="available__tooltip-info-market"
-                            id="tooltip-info-market-3"
-                          >
-                            <h5 class="available__tooltip-info-market-title">
-                              OOO «Вайлдберриз»
-                            </h5>
-                            <span class="available__tooltip-info-market-text"
-                              >ОГРН: 5167746237148</span
+                        <div class="available__container-description">
+                          <p class="available__good-color">Цвет: прозрачный</p>
+                        </div>
+                        <div class="available__container-dispatch">
+                          <p class="available__place-dispatch">Коледино WB</p>
+                          <div class="available__container-company">
+                            <p class="available__company-dispatch">
+                              OOO Мегапрофстиль
+                            </p>
+                            <span
+                              id="available__tooltip-button-market-2"
+                              class="available__tooltip-button-market"
+                              >&#9432;</span
                             >
-                            <span class="available__tooltip-info-market-text"
-                              >129337, Москва, улица Красная Сосна, 2, корпус 1,
-                              стр. 1, помещение 2, офис 34</span
-                            >
+                            <div class="available__tooltip-container">
+                              <div
+                                class="available__tooltip-info-market"
+                                id="tooltip-info-market-2"
+                              >
+                                <h5
+                                  class="available__tooltip-info-market-title"
+                                >
+                                  OOO «МЕГАПРОФСТИЛЬ»
+                                </h5>
+                                <span
+                                  class="available__tooltip-info-market-text"
+                                  >ОГРН: 5167746237148</span
+                                >
+                                <span
+                                  class="available__tooltip-info-market-text"
+                                  >129337, Москва, улица Красная Сосна, 2,
+                                  корпус 1, стр. 1, помещение 2, офис 34</span
+                                >
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="available__container-calculations">
+                 <div class="available__container-calculations">
                   <div class="available__container-counter-icons">
                     <div class="available__wrapper-container">
                       <div class="available__button-container-minus">-</div>
                       <input
                         class="available__input-container"
                         value="1"
-                        data-price="247"
+                        data-id="2"
                       />
                       <div class="available__button-container-plus">+</div>
                     </div>
@@ -547,7 +432,72 @@
                   </div>
                   <div class="available__container-final-sum">
                     <div class="available__wrapper-final">
-                      <p class="available__final-sum" id="available__final-sum">
+                      <p
+                        class="available__final-sum available__final-sum_type_big"
+                        id="available__final-sum"
+                        data-id="2"
+                      >
+                        3675
+                      </p>
+                      <p class="available__final-currency">сом</p>
+                    </div>
+                    <div
+                      class="available__wrapper-general"
+                      id="available__wrapper-general2"
+                    >
+                      <p class="available__general-sum" data-id="2">10500 сом</p>
+                      <div class="available__tooltip-container-info">
+                        <div
+                          class="available__tooltip-info-discount"
+                          id="available__tooltip-info-discount2"
+                        >
+                          <span class="available__info-discount-header">
+                            <span>Скидка 55%</span>
+                            <span>Скидка покупателя 10%</span>
+                          </span>
+                          <span class="available__info-discount-values">
+                            <span>−300 сом</span>
+                            <span>−30 сом</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+              </div>
+            <div class="available__container-goods">
+              <div class="available__container-good">
+                <div class="available__container-good-info">
+                  <div class="available__container-checkbox-img">
+                    <div class="available__wrapper-checkbox-good">
+                      <input
+                        class="checkbox available__custom-checkbox"
+                        type="checkbox"
+                        checked="checked"
+                        id="all-good2"
+                        name="all-good"
+                        value="all-good"
+                        data-id="2"
+                      />
+                      <label for="all-good2"></label>
+                      <p
+                        class="available__good-size-mobile available__good-size-mobile_type_long"
+                      >
+                        56/54/52...
+                      </p>
+                    </div>
+                    <img
+                      class="available__good-img"
+                      src="./images/pictures/Pencils.jpg"
+                      alt="Карандаши"
+                    />
+                  </div>
+                    <div class="available__container-all-mob">
+                      <div class="available__container-final-sum_type_mobile">
+                    <div class="available__wrapper-final">
+                      <p class="available__final-sum" data-id="3" id="available__final-sum">
                         247
                       </p>
                       <p class="available__final-currency">сом</p>
@@ -555,9 +505,145 @@
                     <div class="available__wrapper-general">
                       <p
                         class="available__general-sum"
-                        id="available__wrapper-general3"
+                        id="available__wrapper-general"
+                        data-id="3"
                       >
-                        950 сом
+                        450 сом
+                      </p>
+                      <div class="available__tooltip-container-info">
+                        <div
+                          class="available__tooltip-info-discount"
+                          id="available__tooltip-info-discount3"
+                        >
+                          <span class="available__info-discount-header">
+                            <span>Скидка 55%</span>
+                            <span>Скидка покупателя 10%</span>
+                          </span>
+                          <span class="available__info-discount-values">
+                            <span>−300 сом</span>
+                            <span>−30 сом</span>
+                          </span>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="available__wrapper-description">
+                    <p class="available__good-name">
+                      Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                      заточенные, шестигранные, Faber-Castell
+                    </p>
+                    <!-- <div class="available__container-description">
+                                    <p class="available__good-color">Цвет: белый</p>
+                                    <p class="available__good-size">Размер: 56</p>
+                                </div> -->
+                    <div class="available__container-dispatch">
+                      <p class="available__place-dispatch">Коледино WB</p>
+                      <div class="available__container-company">
+                        <p class="available__company-dispatch">
+                          OOO Вайлдберриз
+                        </p>
+                        <span
+                          id="available__tooltip-button-market-3"
+                          class="available__tooltip-button-market"
+                          >&#9432;</span
+                        >
+                        <div class="available__tooltip-container">
+                          <div
+                            class="available__tooltip-info-market"
+                            id="tooltip-info-market-3"
+                          >
+                            <h5 class="available__tooltip-info-market-title">
+                              OOO «Вайлдберриз»
+                            </h5>
+                            <span class="available__tooltip-info-market-text"
+                              >ОГРН: 5167746237148</span
+                            >
+                            <span class="available__tooltip-info-market-text"
+                              >129337, Москва, улица Красная Сосна, 2, корпус 1,
+                              стр. 1, помещение 2, офис 34</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                    </div>
+                 <div class="available__container-calculations">
+                  <div class="available__container-counter-icons">
+                    <div class="available__wrapper-container">
+                      <div class="available__button-container-minus">-</div>
+                      <input
+                        class="available__input-container"
+                        value="1"
+                        data-id="3"
+                      />
+                      <div class="available__button-container-plus">+</div>
+                    </div>
+                    <p class="available__rest-goods">Осталось 2 шт.</p>
+                    <div class="available__wrapper-icon">
+                      <div class="available__wrapper-svg">
+                        <svg
+                          class="available__icon-like"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3.03399 4.05857C2.26592 4.75224 1.76687 5.83284 1.99496 7.42928C2.22335 9.02783 3.26497 10.6852 4.80439 12.3478C6.25868 13.9184 8.10965 15.4437 9.99999 16.874C11.8903 15.4437 13.7413 13.9184 15.1956 12.3478C16.7351 10.6852 17.7767 9.02783 18.005 7.4293C18.2331 5.83285 17.734 4.75224 16.9659 4.05856C16.1767 3.34572 15.055 3 14 3C12.132 3 11.0924 4.08479 10.5177 4.68443C10.4581 4.7466 10.4035 4.80356 10.3535 4.85355C10.1583 5.04882 9.84169 5.04882 9.64643 4.85355C9.59644 4.80356 9.54185 4.7466 9.48227 4.68443C8.9076 4.08479 7.868 3 5.99999 3C4.94498 3 3.82328 3.34573 3.03399 4.05857ZM2.36374 3.31643C3.37372 2.40427 4.75205 2 5.99999 2C8.07126 2 9.34542 3.11257 9.99999 3.77862C10.6545 3.11257 11.9287 2 14 2C15.2479 2 16.6262 2.40428 17.6362 3.31644C18.6674 4.24776 19.2669 5.66715 18.995 7.5707C18.7233 9.47217 17.515 11.3148 15.9294 13.0272C14.3355 14.7486 12.3064 16.3952 10.3 17.9C10.1222 18.0333 9.87776 18.0333 9.69999 17.9C7.69356 16.3952 5.66446 14.7485 4.07063 13.0272C2.48506 11.3148 1.27668 9.47217 1.00501 7.57072C0.733043 5.66716 1.33253 4.24776 2.36374 3.31643Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </div>
+                      <div class="available__wrapper-svg">
+                        <svg
+                          class="available__icon-delete"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"
+                            fill="black"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"
+                            fill="black"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="available__container-final-sum">
+                    <div class="available__wrapper-final">
+                      <p class="available__final-sum" data-id="3" id="available__final-sum">
+                        247
+                      </p>
+                      <p class="available__final-currency">сом</p>
+                    </div>
+                    <div class="available__wrapper-general">
+                      <p
+                        class="available__general-sum"
+                        id="available__wrapper-general"
+                        data-id="3"
+                      >
+                        450 сом
                       </p>
                       <div class="available__tooltip-container-info">
                         <div
@@ -577,6 +663,8 @@
                     </div>
                   </div>
                 </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -1071,16 +1159,16 @@
             <div class="total__contairen-price">
               <div class="total__wrappre-total-sum">
                 <h2 class="total__title-sum">Итого</h2>
-                <h2 class="total__subtitle-sum">11269 сом</h2>
+                <h2 class="total__subtitle-sum">4201 сом</h2>
               </div>
               <div class="total__wrapper-description-sum">
                 <div class="total__wrapper-goods-sum">
-                  <p class="total__goods-sum"></p>
+                  <p class="total__goods-sum">3 товар(ов)</p>
                   <p class="total__payment-sum">11269 сом</p>
                 </div>
                 <div class="total__wrapper-goods-discount">
                   <p class="total__title-discount">Скидка</p>
-                  <p class="total__discount-sum">−200 985 сом</p>
+                  <p class="total__discount-sum">−12001 сом</p>
                 </div>
                 <div class="total__wrapper-delivery">
                   <p class="total__subtitle-delivery">Доставка</p>
@@ -1225,10 +1313,10 @@
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M0.929612 13.1568C0.539088 13.5473 0.539088 14.1805 0.929612 14.571C1.32014 14.9615 1.9533 14.9615 
-                                2.34383 14.571L8.00085 8.91399L13.658 14.5711C14.0485 14.9616 14.6817 14.9616 15.0722 14.5711C15.4627 14.1806 
-                                15.4627 13.5474 15.0722 13.1569L9.41506 7.49978L15.0717 1.84309C15.4623 1.45257 15.4623 0.819404 15.0717 
-                                0.428879C14.6812 0.0383551 14.0481 0.0383555 13.6575 0.428879L8.00085 6.08557L2.34427 0.428985C1.95374 0.0384613 1.32058 
+                d="M0.929612 13.1568C0.539088 13.5473 0.539088 14.1805 0.929612 14.571C1.32014 14.9615 1.9533 14.9615
+                                2.34383 14.571L8.00085 8.91399L13.658 14.5711C14.0485 14.9616 14.6817 14.9616 15.0722 14.5711C15.4627 14.1806
+                                15.4627 13.5474 15.0722 13.1569L9.41506 7.49978L15.0717 1.84309C15.4623 1.45257 15.4623 0.819404 15.0717
+                                0.428879C14.6812 0.0383551 14.0481 0.0383555 13.6575 0.428879L8.00085 6.08557L2.34427 0.428985C1.95374 0.0384613 1.32058
                                 0.038461 0.930055 0.428985C0.539531 0.81951 0.539531 1.45267 0.930055 1.8432L6.58663 7.49978L0.929612 13.1568Z"
                 fill="#A0A0A4"
               />
@@ -1434,7 +1522,7 @@
         </div>
       </div>
     </div>
-    <!-- 
+    <!--
 
 
 
@@ -1460,11 +1548,11 @@
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M0.929612 13.1568C0.539088 13.5473 0.539088 14.1805 
-                            0.929612 14.571C1.32014 14.9615 1.9533 14.9615 2.34383 14.571L8.00085 8.91399L13.658 14.5711C14.0485 
-                                14.9616 14.6817 14.9616 15.0722 14.5711C15.4627 14.1806 15.4627 13.5474 15.0722 13.1569L9.41506 
-                                7.49978L15.0717 1.84309C15.4623 1.45257 15.4623 0.819404 15.0717 0.428879C14.6812 0.0383551 14.0481 
-                                0.0383555 13.6575 0.428879L8.00085 6.08557L2.34427 0.428985C1.95374 0.0384613 1.32058 0.038461 0.930055 
+                d="M0.929612 13.1568C0.539088 13.5473 0.539088 14.1805
+                            0.929612 14.571C1.32014 14.9615 1.9533 14.9615 2.34383 14.571L8.00085 8.91399L13.658 14.5711C14.0485
+                                14.9616 14.6817 14.9616 15.0722 14.5711C15.4627 14.1806 15.4627 13.5474 15.0722 13.1569L9.41506
+                                7.49978L15.0717 1.84309C15.4623 1.45257 15.4623 0.819404 15.0717 0.428879C14.6812 0.0383551 14.0481
+                                0.0383555 13.6575 0.428879L8.00085 6.08557L2.34427 0.428985C1.95374 0.0384613 1.32058 0.038461 0.930055
                                 0.428985C0.539531 0.81951 0.539531 1.45267 0.930055 1.8432L6.58663 7.49978L0.929612 13.1568Z"
                 fill="#A0A0A4"
               />

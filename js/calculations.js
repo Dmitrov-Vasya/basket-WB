@@ -1,14 +1,71 @@
-let data = [
+let dataBasket = [
   {
+    id: '1',
     checked: true,
-    name: 'Товар 1',
+    name: 'T-shirt',
     count: 1,
-    amount: 100,
-    saleAmount: 90,
+    amount: 1051,
     maxCount: 2,
+    sale: [
+      {
+        // saleAmount
+        percent: 10,
+        description: 'Скидка покупателя 10%',
+      },
+      {
+        percent: 55,
+        description: 'Скидка 55%',
+      },
+    ],
   },
-  { checked: true, name: 'Товар 2', count: 1, amount: 100, saleAmount: 90 },
+  {
+    id: '2',
+    checked: true,
+    name: 'Telephone',
+    count: 1,
+    amount: 10500,
+    sale: [
+      {
+        // saleAmount
+        percent: 10,
+        description: 'Скидка покупателя 10%',
+      },
+      {
+        percent: 55,
+        description: 'Скидка 55%',
+      },
+    ],
+  },
+  {
+    id: '3',
+    checked: true,
+    name: 'Pencil',
+    count: 1,
+    amount: 450,
+    maxCount: 2,
+    sale: [
+      {
+        // saleAmount
+        percent: 10,
+        description: 'Скидка покупателя 10%',
+      },
+      {
+        percent: 55,
+        description: 'Скидка 55%',
+      },
+    ],
+  },
 ];
+
+dataBasket.forEach((item) => {
+  let totalSaleAmount = 0;
+  item.sale.forEach((s) => {
+    const saleAmount = Math.floor((s.percent / 100.0) * item.amount);
+    s.saleAmount = saleAmount;
+    totalSaleAmount += saleAmount;
+  });
+  item.saleAmount = totalSaleAmount;
+});
 
 //  использование checkbox
 const availableCustomCheckbox = document.querySelectorAll(
@@ -20,8 +77,14 @@ const availableCustomCheckboxAllGoods = document.querySelector(
 
 availableCustomCheckboxAllGoods.addEventListener('click', function (e) {
   console.log(e.target.checked);
+  dataBasket.forEach((item) => {
+    item.checked = e.target.checked;
+  });
+
   availableCustomCheckbox.forEach((checkbox) => {
-    checkbox.checked = e.target.checked;
+    const id = checkbox.getAttribute('data-id');
+    const item = dataBasket.find((x) => x.id == id);
+    if (item) checkbox.checked = item.checked;
   });
 });
 availableCustomCheckbox.forEach(function (checkbox) {
@@ -31,10 +94,10 @@ availableCustomCheckbox.forEach(function (checkbox) {
     )
       ? (availableCustomCheckboxAllGoods.checked = false)
       : (availableCustomCheckboxAllGoods.checked = true);
+
+    updateTotalPaymentSum();
   });
 });
-
-// const checkboxActiveInput = document
 
 // counter
 const availableInputContainers = document.querySelectorAll(
@@ -42,14 +105,16 @@ const availableInputContainers = document.querySelectorAll(
 );
 availableInputContainers.forEach(function (availableInputContainer) {
   availableInputContainer.addEventListener('change', function (e) {
-    const sum = e.target.value * parseInt(e.target.getAttribute('data-price'));
-    e.target.parentNode.parentNode.parentNode.querySelector(
-      '.available__final-sum'
-    ).textContent = sum;
+    const id = e.target.getAttribute('data-id');
+    const item = dataBasket.find((x) => x.id == id);
+    if (item) item.count = parseInt(e.target.value);
+
+    updateGoodSum();
+    updateGoodDiscount();
     updateTotalGoodsSum();
+    updateTotalDiscount();
   });
 });
-
 const availableButtonsContainerMinus = document.querySelectorAll(
   '.available__button-container-minus'
 );
@@ -82,45 +147,67 @@ availableButtonsContainerPlus.forEach(function (availableButtonContainerPlus) {
   });
 });
 
+// функция  обновления общей стоимости за товар
+const updateGoodSum = () => {
+  const availableFinalSums = document.querySelectorAll('.available__final-sum');
+  availableFinalSums.forEach(function (availableFinalSum) {
+    const id = availableFinalSum.getAttribute('data-id');
+    const item = dataBasket.find((x) => x.id == id);
+    if (item)
+      availableFinalSum.textContent =
+        item.count * (item.amount - item.saleAmount);
+  });
+};
+
+//функция обновления общей стоимости скидки на товар
+const updateGoodDiscount = () => {
+  const availableGeneralDiscounts = document.querySelectorAll(
+    '.available__general-sum'
+  );
+  availableGeneralDiscounts.forEach(function (availableGeneralDiscount) {
+    const id = availableGeneralDiscount.getAttribute('data-id');
+    const item = dataBasket.find((x) => x.id == id);
+    if (item)
+      availableGeneralDiscount.textContent = item.count * item.amount + 'сом';
+  });
+};
+
 // подсчет сумм в разделе Итого
-const availableWrappersFinal = document.querySelectorAll(
-  '.available__wrapper-final'
-);
-const totalPaymentSum = document.querySelector('.total__subtitle-sum');
 const updateTotalPaymentSum = () => {
   let totalAllPayment = 0;
-  availableWrappersFinal.forEach(function (availableWrapperFinal) {
-    let sumString = availableWrapperFinal.querySelector(
-      '.available__final-sum'
-    ).textContent;
-    let sum = parseFloat(sumString);
-    // let availableInputContainer = parseFloat(
-    //   document.querySelector('.available__input-container').value
-    // );
-    totalAllPayment += sum;
+  const totalPaymentSum = document.querySelector('.total__subtitle-sum');
+  dataBasket.forEach(function (item) {
+    if (item.checked) {
+      totalAllPayment += item.count * (item.amount - item.saleAmount);
+    }
   });
   totalPaymentSum.textContent = totalAllPayment + ' сом';
 };
+// подсчет суммы скидки в разделе Итого
+const updateTotalDiscount = () => {
+  let totalAllDiscount = 0;
+  const totalDiscount = document.querySelector('.total__discount-sum');
+  dataBasket.forEach(function (item) {
+    if (item.checked) {
+      totalAllDiscount += item.count * item.saleAmount;
+    }
+  });
+  totalDiscount.textContent = '-' + totalAllDiscount + ' сом';
+};
 
 // подсчет количества товара в разделе товара
-const totalGoodsSum = document.querySelector('.total__goods-sum');
-const availableWrapperContainers = document.querySelectorAll(
-  '.available__wrapper-container'
-);
+
 const updateTotalGoodsSum = () => {
-  totalAllGoods = 0;
-  availableWrapperContainers.forEach(function (availableWrapperContainer) {
-    let sumStringGoods = availableWrapperContainer.querySelector(
-      '.available__input-container'
-    ).value;
-    let sum = parseFloat(sumStringGoods);
-    totalAllGoods += sum;
+  let totalAllGoods = 0;
+  const totalGoodsSum = document.querySelector('.total__goods-sum');
+  dataBasket.forEach(function (item) {
+    if (item.checked) {
+      totalAllGoods += item.count;
+    }
   });
+
   totalGoodsSum.textContent = totalAllGoods + ' товар(ов)';
 };
 
 // сумма товара без учета скидки
 const totalSubtitleSum = document.querySelector('.total__subtitle-sum');
-
-// сумма скидки на товар
-const totalDiscountSum = document.querySelector('.total__discount-sum');

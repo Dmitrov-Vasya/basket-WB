@@ -233,4 +233,7 @@
 }
 
 @media screen and (max-width: 320px) {
+  .header__tittle-mob {
+    font-family: Segoe UI;
+  }
 }

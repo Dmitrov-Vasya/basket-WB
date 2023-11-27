@@ -43,7 +43,7 @@
 }
 .unavailable__wrapper-info {
   display: flex;
-  width: 397px;
+  /* width: 397px; */
   padding-top: 12px;
   align-items: flex-start;
   gap: 16px;
@@ -138,6 +138,12 @@
     z-index: 0;
     gap: 100px;
   }
+  .unavailable__wrapper-card {
+    display: inline;
+  }
+  .unavailable__wrapper-description {
+    width: 192px;
+  }
   .unavailable__wrapper-card-mobile {
     display: inline;
   }
@@ -175,5 +181,29 @@
   }
   .unavailable__good-size-mobile_type_long {
     width: 66px;
+  }
+  .unavailable__good-name {
+    width: 192px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0; /* Убираем внешний отступ */
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+  }
+  .unavailable__good-color {
+    width: 192px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0; /* Убираем внешний отступ */
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
   }
 }
