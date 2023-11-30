@@ -99,3 +99,8 @@
   font-weight: 400;
   line-height: 16px; /* 123.077% */
 }
+@media screen and (max-width: 1024px) {
+  .payment__header {
+    margin-right: 5px;
+  }
+}

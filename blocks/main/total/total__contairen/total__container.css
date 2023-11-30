@@ -361,10 +361,13 @@
 
 @media screen and (max-width: 1024px) {
   .total__contairen {
-    gap: 22px;
+    gap: 26px;
   }
   .total__contairen-delivery-all {
-    gap: 7px;
+    gap: 11px;
+  }
+  .total__contairen-delivery {
+    gap: 6px;
   }
   .total__title-payment {
     margin-top: -5px;

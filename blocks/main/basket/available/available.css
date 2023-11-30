@@ -3,7 +3,7 @@
   /* width: 891px; */
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 19px;
 }
 .available__container-header {
   display: flex;
@@ -121,6 +121,7 @@
 }
 .available__wrapper-description {
   display: flex;
+  max-width: 275px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -505,9 +506,18 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .available {
+    gap: 20px;
+  }
   .available__wrapper-container {
     width: 80px;
     height: 32px;
+  }
+  .available__container-good-info {
+    padding-top: 13px;
+  }
+  .available__container-goods {
+    margin-bottom: -6px;
   }
   .available__final-sum {
     font-size: 16px;
@@ -549,7 +559,7 @@
   }
   .available__rest-goods {
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 13px;
   }
   .available__wrapper-icon {
     margin-right: -45px;

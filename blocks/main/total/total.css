@@ -26,6 +26,7 @@
   }
   .total__contairen-all {
     gap: 20px;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 1130px) {

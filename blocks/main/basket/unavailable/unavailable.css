@@ -65,6 +65,7 @@
 }
 .unavailable__wrapper-description {
   display: flex;
+  max-width: 309px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -129,6 +130,12 @@
 @media screen and (max-width: 1024px) {
   .unavailable__wrapper-card {
     gap: 61px;
+  }
+  .unavailable__wrapper-icon {
+    gap: 16px;
+  }
+  .available__wrapper-svg {
+    padding-right: 3px;
   }
 }
 

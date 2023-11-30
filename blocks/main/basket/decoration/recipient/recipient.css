@@ -34,7 +34,7 @@
 .recipient__wrapper-initials {
   display: flex;
   align-items: flex-start;
-  gap: 77px;
+  gap: 46px;
   align-self: stretch;
 }
 .recipient__wrapper-initial {
@@ -55,7 +55,7 @@
 
 .recipient__input-initial {
   display: block;
-  max-width: 283px;
+  width: 283px;
   height: 24px;
   color: var(--system-gray, #9797af);
   font-family: Segoe UI;
@@ -80,12 +80,12 @@
   display: flex;
   align-items: flex-start;
   align-self: stretch;
-  gap: 41px;
+  gap: 50px;
   justify-content: flex-start;
 }
 .recipient__input-initial-info {
   display: block;
-  max-width: 180px;
+  width: 180px;
   height: 24px;
   color: var(--system-gray, #9797af);
   font-family: Segoe UI;
