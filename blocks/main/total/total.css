@@ -39,3 +39,8 @@
     max-width: 1000px;
   }
 }
+@media screen and (max-width: 320px) {
+  .total__contairen-all{
+    padding: 8px 16px 0px 16px;
+  }
+}

@@ -69,6 +69,7 @@
   /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
 .recipient__span-error {
+  display: none;
   color: var(--system-orange, #f55123);
   font-family: Segoe UI;
   font-size: 12px;
@@ -107,6 +108,7 @@
   }
   .recipient__wrapper-info {
     gap: 22px;
+    
   }
 }
 @media screen and (max-width: 700px) {
@@ -117,3 +119,21 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 320px) {
+  .recipient{
+    padding: 16px 16px 24px 16px;
+  }
+  .recipient__title {
+    font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 140% */
+letter-spacing: -0.2px;
+  }
+  .recipient__input-initial-info{
+    width: 287px;
+  }
+}
+
+
+

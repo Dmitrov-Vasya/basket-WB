@@ -113,6 +113,7 @@ availableInputContainers.forEach(function (availableInputContainer) {
     updateGoodDiscount();
     updateTotalGoodsSum();
     updateTotalDiscount();
+    updateSumGoodsNoDiscount();
   });
 });
 const availableButtonsContainerMinus = document.querySelectorAll(
@@ -210,4 +211,13 @@ const updateTotalGoodsSum = () => {
 };
 
 // сумма товара без учета скидки
-const totalSubtitleSum = document.querySelector('.total__subtitle-sum');
+const updateSumGoodsNoDiscount = () => {
+  let totalAllSumGoodsNoDiscount = 0;
+  const totalPaymentSum = document.querySelector('.total__payment-sum');
+  dataBasket.forEach(function (item) {
+    if (item.checked) {
+      totalAllSumGoodsNoDiscount  += item.count * item.amount
+    }
+  });
+  totalPaymentSum.textContent = totalAllSumGoodsNoDiscount + ' сом'
+}

@@ -214,3 +214,12 @@
     overflow: hidden;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .unavailable {
+    padding: 0px 16px;
+  }
+  .unavailable__container-goods{
+    gap: 40px;
+  }
+}

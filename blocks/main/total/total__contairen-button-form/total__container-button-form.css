@@ -96,3 +96,29 @@
     gap: 9px;
   }
 }
+@media screen and (max-width: 320px) {
+  .total__title-sum{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+  }
+  .total__subtitle-sum {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+      }
+  .total__goods-sum .total__title-discount .total__subtitle-delivery .total__payment-sum .total__discount-sum .total__delivery-sum {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .total__contairen-delivery{
+    display: none;
+  }
+  .total__contairen-payment {
+    display: none;
+  }
+}

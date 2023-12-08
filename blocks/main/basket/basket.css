@@ -40,12 +40,13 @@
 }
 @media screen and (max-width: 320px) {
   .basket {
-    width: 288px;
+    width: 320px;
     gap: 0;
   }
   .basket__tittle {
     margin-top: 0;
     margin-bottom: 11px;
+    padding: 0px 16px;
   }
 }
 /* @media screen and (max-width: 1000px) {

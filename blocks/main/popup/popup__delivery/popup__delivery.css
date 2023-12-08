@@ -55,7 +55,7 @@
   padding: 0px 22px;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
   align-self: stretch;
 }
 .popup__delivery-container-method {
@@ -87,6 +87,7 @@
   gap: 4px;
 }
 .popup__delivery-method-input {
+  display: none;
   color: var(--text-black, #000);
   font-family: Segoe UI;
   font-size: 13px;
@@ -210,7 +211,7 @@
 .popup__delivery-container-button-enter {
   width: 452px;
   display: flex;
-  padding: 49px 24px 24px 24px;
+  padding: 70px 24px 24px 24px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;

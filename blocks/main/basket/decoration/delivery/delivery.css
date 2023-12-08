@@ -253,4 +253,25 @@
   .delivery__wrapper {
     display: inline;
   }
+  .delivery__title {
+    font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 140% */
+letter-spacing: -0.2px;
+  } 
 }
+
+@media screen and (max-width: 320px) {
+  .delivery{
+    padding: 16px 16px 0px 16px;
+    margin-top: 50px;
+  }
+  .delivery__header{
+    padding: 0;
+  }
+  .delivery__info{
+    padding: 0;
+  }
+}
+
